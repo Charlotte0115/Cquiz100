@@ -23,6 +23,19 @@ int main(void)
                 break;
             }
             if (score <= 100 && 0 <= score && score >= scores[number])
+            {
+                printf("학점은 %s입니다. \n", grade[number]);
+                break;
+            }
+            if (score > 100 && score < 0)
+            {
+                printf("성적을 올바르게 입력하세요 (0 ~ 100)\n");
+                break;
+            }
+        }
+        if (end ==1)
+        {
+            break;
         }
     }
 }
