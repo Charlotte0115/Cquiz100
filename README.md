@@ -15,7 +15,14 @@ int main(void)
         int score = get_int("성적을 입력하세요 : ");
         for (int i = 0; i<9, i++)
         {
-        
+            int nimber = i;
+            if (score == 999)
+            {
+                printf("프로그램을 종료합니다.\n");
+                end = 1;
+                break;
+            }
+            if (score <= 100 && 0 <= score && score >= scores[number])
         }
     }
 }
